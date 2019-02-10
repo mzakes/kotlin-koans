@@ -14,7 +14,7 @@ fun useExtensionFunction() {
     // try Ctrl+Space "default completion" after the dot: lastChar() is visible
     "abc".lastChar()
 }
-
+// add some comments
 // 'lastChar' is compiled to a static function in the class ExtensionFunctionsKt (see JavaCode9.useExtension)
 
 fun todoTask9(): Nothing = TODO(

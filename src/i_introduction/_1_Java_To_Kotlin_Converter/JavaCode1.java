@@ -10,12 +10,14 @@ public class JavaCode1 extends JavaCode {
         StringBuilder sb = new StringBuilder();
         sb.append("{");
         Iterator<Integer> iterator = collection.iterator();
-        while (iterator.hasNext()) {
-            Integer element = iterator.next();
-            sb.append(element);
-            if (iterator.hasNext()) {
-                sb.append(", ");
-            }
+        if (iterator.hasNext()) {
+            do {
+                Integer element = iterator.next();
+                sb.append(element);
+                if (iterator.hasNext()) {
+                    sb.append(", ");
+                }
+            } while (iterator.hasNext());
         }
         sb.append("}");
         return sb.toString();
